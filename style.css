@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Iowan Old Style", "Times New Roman", Times;
+}
+
+p {
+  font-size: 18px;
+}
+
+#hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#mobile-nav.active {
+  transform: translateX(0);
+}
+
+.buttons {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  background-size: 200% auto;
+  white-space: nowrap;
+}
+
+.buttons:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-decoration: none;
+  background-position: right center;
+}
+
+.buttons.red {
+  background-image: linear-gradient(45deg, #ff6f61, #d72638);
+}
+
+.buttons.blue {
+  background-image: linear-gradient(45deg, #0077b6, #023e8a);
+}
+
+.buttons.green {
+  background-image: linear-gradient(45deg, #52b788, #2d6a4f);
+}
+
+.buttons.purple {
+  background-image: linear-gradient(45deg, #8338ec, #3a0ca3);
+}
+
+table {
+  text-size-adjust: 100%;
+  --color-primary: #1c69ce;
+  font-family: "Iowan Old Style", "Times New Roman", Times;
+  box-sizing: inherit;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0px;
+  margin: 0px 0px 20px;
+  line-height: 1.4;
+  word-break: normal;
+  text-decoration: none;
+  font-size: 15.5px;
+}
+
+thead {
+  text-size-adjust: 100%;
+  --color-primary: #1c69ce;
+  font-family: "Iowan Old Style", "Times New Roman", Times;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  line-height: 1.4;
+  word-break: normal;
+  font-size: 15.5px;
+  box-sizing: inherit;
+  color: rgb(0, 0, 0);
+  background: rgb(230, 232, 241);
+}
+
+tr {
+  text-size-adjust: 100%;
+  --color-primary: #1c69ce;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  line-height: 1.4;
+  word-break: normal;
+  font-size: 15.5px;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+}
+
+th {
+  text-size-adjust: 100%;
+  --color-primary: #1c69ce;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  line-height: 1.4;
+  font-size: 15.5px;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+  word-break: initial;
+  user-select: text;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  font-weight: 600;
+  padding: 12px;
+}
+
+td {
+  text-size-adjust: 100%;
+  --color-primary: #1c69ce;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  box-sizing: inherit;
+  line-height: 1.4;
+  word-break: initial;
+  user-select: text;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  padding: 12px;
+  font-size: 15.5px;
+}
